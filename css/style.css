@@ -50,6 +50,9 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+.img-banner{
+  margin: 0 auto;
+}
 .img-centered {
   margin: 0 auto;
   display: block;
@@ -236,12 +239,10 @@ fieldset[disabled] .btn-xl.active {
 header {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background-attachment: fixed;
+  background-size: contain;         
+  background-repeat: no-repeat;
+  background-position:top;
   text-align: center;
   color: white;
 }
@@ -599,6 +600,7 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
+  padding-top: 1%;
   background-color: #faa835;
   background-image: url('../img/map-image.png');
   background-position: center;
@@ -608,17 +610,17 @@ section#contact .section-heading {
   color: white;
 }
 section#contact .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 section#contact .form-group input,
 section#contact .form-group textarea {
-  padding: 20px;
+  padding: 10px;
 }
 section#contact .form-group input.form-control {
   height: auto;
 }
 section#contact .form-group textarea.form-control {
-  height: 236px;
+  height: 150px;
 }
 section#contact .form-control:focus {
   border-color: #fe6d36;
@@ -793,4 +795,32 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.darkfont{
+  color: #6e6e6e;
+}
+.send-btn{
+  background-color: #fe6d36;
+  border-color: #fe6d36;
+  color: white;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom:100%
+}
+.headTxt{
+  background-color: rgba(250, 168, 53, 0.8); 
+  color: white; 
+  padding: 2%;
+  width:max-content;
+}
+.indexHeadTxt{
+  width: auto;
+}
+.inThePage{
+  color: #fe6d36;
 }
