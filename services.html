@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Openbox Solutions">
+    <meta name="author" content="Ragha Systems LLC">
     <title>Ragha Systems LLC.</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -156,11 +156,11 @@
         </div>
         <div class="container">
             <hr>
-                <h3>Capabilities Statements</h3>
+                <div class="accordion"><h3>Capabilities Statements</h3></sub></div>
+                <div class='embed-responsive'>
+                    <object data='CapabilityStatement.pdf' type='application/pdf' width='100%' height='100%'></object>
+                </div>
                 <br>
-            <div class='embed-responsive'>
-                <object data='CapabilityStatement.pdf' type='application/pdf' width='100%' height='100%'></object>
-            </div>
         </div>
     <footer>
         <hr>
@@ -509,6 +509,22 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
     <script src="js/obs.min.js"></script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 
 </html>
